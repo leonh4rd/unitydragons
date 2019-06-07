@@ -16,7 +16,7 @@ public class Jump : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1"))
         {
-            GetComponent<Rigidbody2D>().AddForce(jumpForce);
+            GetComponent<Rigidbody2D>().AddForce(jumpForce, ForceMode2D.Impulse);
             GetComponent<AudioSource>().Play();
         }
     }

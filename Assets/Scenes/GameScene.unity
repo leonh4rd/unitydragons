@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 670956870}
   - component: {fileID: 670956872}
   m_Layer: 8
-  m_Name: BlueDragon
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,7 +708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3914507a98938840afe6ad9c7c6dec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: {x: 0, y: 450}
+  jumpForce: {x: 0, y: 10}
 --- !u!114 &670956870
 MonoBehaviour:
   m_ObjectHideFlags: 0
