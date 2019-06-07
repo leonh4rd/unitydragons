@@ -12,7 +12,7 @@ public class MoveLeft : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+        transform.Translate(Vector3.left * moveSpeed * Time.deltaTime, Space.World);
 
         if(transform.position.x < -10)
         {
