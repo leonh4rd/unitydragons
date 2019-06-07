@@ -6,6 +6,12 @@ public class MoveLeft : MonoBehaviour
 {
     public float moveSpeed = 1f;
 
+    private Enemy enemy;
+
+    void Awake()
+    {   
+        enemy = GetComponent<Enemy>();
+    }
     private void OnEnable() {
         ShowRandomSprite();
     }
@@ -18,6 +24,7 @@ public class MoveLeft : MonoBehaviour
         {
             transform.position += Vector3.right * 25f;
             ShowRandomSprite();
+            enemy?.Respawn();
         }
     }
 
